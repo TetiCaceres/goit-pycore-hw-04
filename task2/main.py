@@ -32,4 +32,9 @@ def get_cats_info(path) -> list:
 
 # Usage example
 cats_info = get_cats_info("task2/cats_file.txt")
-print(cats_info)
+
+# Formatted output
+print("[")
+for cat in cats_info:
+    print(f"    {cat}")
+print("]")
